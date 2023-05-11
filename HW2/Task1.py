@@ -8,5 +8,7 @@ toshiba = ['David', 'Alex', 'Bob', 'Eva', 'Felix']
 print(eleks)
 print(toshiba)
 
-toshiba.extend(eleks)
+toshiba.extend(eleks.copy())
+eleks.clear()
+print(eleks)
 print(toshiba)
