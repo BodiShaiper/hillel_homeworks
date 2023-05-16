@@ -6,6 +6,11 @@ case with odd indices.
 '''
 
 list_of_elements = [1, 2, 3, 4, 5, 6, 7, 8]
+
+odd_list_of_tuples = [(i, elem) for i, elem in enumerate(list_of_elements) if i % 2 != 0]
+even_list_of_tuples = [(i, elem) for i, elem in enumerate(list_of_elements) if i % 2 == 0]
+
+"""
 odd_list_of_tuples = []
 even_list_of_tuples = []
 index = 0
@@ -16,6 +21,7 @@ for number in list_of_elements:
     else:
         even_list_of_tuples.append((index, number))
     index += 1
+"""
 
 print(odd_list_of_tuples)
 print(even_list_of_tuples)
