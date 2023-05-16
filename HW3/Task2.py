@@ -6,10 +6,9 @@ Accordingly, you need to divide it in 2 different ways by 2.
 x = 2
 
 multiple_1 = x * 2
-multiple_2 = x + x
-multiple_3 = x << 1
+multiple_2 = x << 1
 
-print(multiple_1, multiple_2, multiple_3)
+print(multiple_1, multiple_2)
 
 divide_1 = x / 2
 divide_2 = x // 2
