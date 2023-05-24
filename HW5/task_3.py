@@ -12,6 +12,5 @@ with open(file_path, "r") as file:
                 else:
                     letter_counts[letter] = 1
 
-# Display the letter counts
 for letter, count in sorted(letter_counts.items()):
     print(f"{letter} => {count}")
