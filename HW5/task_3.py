@@ -1,16 +1,11 @@
-file_path = "./test/data/text.txt"
+import collections
 
-letter_counts = {}
+file_path = "./test/data/text.txt"
+letter_counts = collections.Counter()
 
 with open(file_path, "r") as file:
     for line in file:
-        for letter in line:
-            if letter.isalpha():
-                letter = letter.lower()
-                if letter in letter_counts:
-                    letter_counts[letter] += 1
-                else:
-                    letter_counts[letter] = 1
+        letter_counts.update(filter(str.isalpha, line.lower()))
 
 for letter, count in sorted(letter_counts.items()):
-    print(f"{letter} => {count}")
+    print(f"{letter}: {count}")
