@@ -7,6 +7,5 @@ def even_squares():
 
 even_squares_generator = even_squares()
 
-
 for square in even_squares_generator:
     print(square)
