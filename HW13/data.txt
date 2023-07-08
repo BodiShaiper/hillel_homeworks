@@ -1,0 +1,6 @@
+name,surname,age,salary
+Bohdan,Dovbysh,28,100
+Alison,Burgers,24,800
+Ben,Franklin,200,1000
+Mr,Bean,40,1200
+Donald,McDonald,66,3500
